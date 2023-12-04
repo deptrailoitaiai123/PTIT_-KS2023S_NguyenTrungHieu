@@ -101,8 +101,8 @@ void sortCDList() {
     printf("da sap xep phim thoi thoi luong tang dan\n");
 }
 int main(){
-    cdList[0] = (struct CD){1, "CD1", 90, "nguyen", true};
-    cdList[1] = (struct CD){2, "CD2", 20, "trung ", false};
+    cdList[0] = (struct CD){1, "ho", 90, "nguyen", true};
+    cdList[1] = (struct CD){2, "dem", 20, "trung ", false};
     int choice;
     printf("***************MENU***********\n");
     printf("1. in toan bo danh sach CD co trong hang\n");
