@@ -14,9 +14,9 @@ struct CD{
 	int  	cdCurrent=2;
 void printfCDList(){
 	printf("danh sach CD \n");
-	printf("%d.   %s %fp    %s    %s   \n","id","ten phim","thoi luong","noi dung ","trang thai");
+	printf("%s.  	%s     %s     %s     %s\n","ID","ten phim","thoi luong ","noi dung ","trang thai");
 		for(int i=0;i<cdCurrent;i++){
-			printf("    %d.     %s      %fp      %s       %s   \n",cdList[i].id, cdList[i].name, cdList[i].duration, cdList[i].content, cdList[i].status ? "online" : "offline");
+	printf("%d.	%s	   %fp         %s	     %s\n",cdList[i].id, cdList[i].name, cdList[i].duration, cdList[i].content, cdList[i].status ? "online" : "offline");
     }		
 }
 void addNewCD() {
@@ -99,6 +99,9 @@ void sortCDList() {
     }
 
     printf("da sap xep phim thoi thoi luong tang dan\n");
+    for(int i = 0;i < cdCurrent; i++){
+    	printf("%s\t ",cdList[i].name	);
+    	}
 }
 int main(){
     cdList[0] = (struct CD){1, "ho", 90, "nguyen", true};
@@ -115,7 +118,7 @@ int main(){
     
     
     	
-   	printf("MOI NHAP YEU CAU!!!\n ");
+   	printf("\n MOI NHAP YEU CAU!!!\n ");
 	scanf("%d", &choice);
         switch (choice) {
             case 1:
